@@ -24,8 +24,13 @@ public class ContactsFrame extends JFrame {
 
     @PostConstruct
     public void init() {
+        JButton addButton = new JButton("Add contact");
+        addButton.addActionListener((e) -> new ContactDetailsDialog(this, null));
+
+
         add(contactScrollPane);
-        add(new JButton("Add contact"), BorderLayout.SOUTH);
+        add(addButton, BorderLayout.SOUTH);
+
         pack();
         setVisible(true);
     }

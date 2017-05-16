@@ -14,22 +14,16 @@ public class Contact {
 
     private String surname;
 
-    private String address;
-
     private String email;
-
-    private String phoneNo;
 
     public Contact() {
     }
 
-    public Contact(String displayName, String name, String surname, String address, String email, String phoneNo) {
+    public Contact(String displayName, String name, String surname, String email) {
         this.displayName = displayName;
         this.name = name;
         this.surname = surname;
-        this.address = address;
         this.email = email;
-        this.phoneNo = phoneNo;
     }
 
     public String getDisplayName() {
@@ -56,28 +50,12 @@ public class Contact {
         this.surname = surname;
     }
 
-    public String getAddress() {
-        return address;
-    }
-
-    public void setAddress(String address) {
-        this.address = address;
-    }
-
     public String getEmail() {
         return email;
     }
 
     public void setEmail(String email) {
         this.email = email;
-    }
-
-    public String getPhoneNo() {
-        return phoneNo;
-    }
-
-    public void setPhoneNo(String phoneNo) {
-        this.phoneNo = phoneNo;
     }
 
     @Override
@@ -92,9 +70,7 @@ public class Contact {
                 .append(displayName, contact.displayName)
                 .append(name, contact.name)
                 .append(surname, contact.surname)
-                .append(address, contact.address)
                 .append(email, contact.email)
-                .append(phoneNo, contact.phoneNo)
                 .isEquals();
     }
 
@@ -104,9 +80,7 @@ public class Contact {
                 .append(displayName)
                 .append(name)
                 .append(surname)
-                .append(address)
                 .append(email)
-                .append(phoneNo)
                 .toHashCode();
     }
 

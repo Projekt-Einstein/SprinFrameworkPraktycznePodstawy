@@ -24,7 +24,8 @@ public class ContactList extends JList<Contact> {
     public ContactList() {
         super();
         setPreferredSize(new Dimension(200, 100));
-
+        setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
+        setToolTipText("Double click on element to show details");
     }
 
     @PostConstruct
