@@ -13,7 +13,6 @@ public class Main {
         AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(SwingConfig.class);
 
         new ContactsFrame();
-//        SwingUtilities.invokeLater(() -> new ContactsFrame());
     }
 
 }

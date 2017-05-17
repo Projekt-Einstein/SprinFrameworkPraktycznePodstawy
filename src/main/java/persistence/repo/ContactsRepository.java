@@ -1,4 +1,4 @@
-package repo;
+package persistence.repo;
 
 import model.Contact;
 
@@ -11,6 +11,9 @@ public interface ContactsRepository {
 
     List<Contact> getAllContacts();
 
-//    Contact getContactByDisplayName(String displayName);
+    void updateContact(Contact contact);
 
+    void deleteContact(Contact contact);
+
+    void saveContact(Contact contact);
 }

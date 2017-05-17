@@ -16,17 +16,21 @@ public class ContactsFrame extends JFrame {
     @Autowired
     private JScrollPane contactScrollPane;
 
+    @Autowired
+    ContactDetailsDialog contactDetailsDialog;
+
     public ContactsFrame() {
         super("My contacts");
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
+
+        setPreferredSize(new Dimension(300, 300));
     }
 
     @PostConstruct
     public void init() {
         JButton addButton = new JButton("Add contact");
-        addButton.addActionListener((e) -> new ContactDetailsDialog(this, null));
-
+        addButton.addActionListener((e) -> contactDetailsDialog.showDialog(null));
 
         add(contactScrollPane);
         add(addButton, BorderLayout.SOUTH);
