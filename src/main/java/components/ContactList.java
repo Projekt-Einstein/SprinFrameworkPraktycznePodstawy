@@ -11,7 +11,8 @@ import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
 /**
- * Created by domino on 5/16/17.
+ * Lista kontakow - wszystkie konstrukcje z tej klasy juz gdzies opisalem ;)
+ * @author Dominik C.
  */
 @Component
 public class ContactList extends JList<Contact> {

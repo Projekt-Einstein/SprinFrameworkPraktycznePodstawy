@@ -6,6 +6,7 @@ import java.awt.*;
 import java.awt.event.ActionListener;
 
 /**
+ * Klasa pomocnicza do tworzeia niektorych komponentow
  * @author Dominik C.
  */
 public abstract class GuiHelper {

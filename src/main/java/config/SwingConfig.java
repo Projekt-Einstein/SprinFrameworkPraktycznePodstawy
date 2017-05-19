@@ -14,7 +14,8 @@ import javax.swing.*;
 import java.awt.*;
 
 /**
- * Created by domino on 5/15/17.
+ * Konfiguracja springa
+ * @author Dominik C.
  */
 @Configuration
 @ComponentScan({"components", "persistence"})

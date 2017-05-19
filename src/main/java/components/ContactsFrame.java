@@ -8,7 +8,9 @@ import javax.swing.*;
 import java.awt.*;
 
 /**
- * Created by domino on 5/15/17.
+ * Okno glowne kontaktow
+ *
+ * @author Dominik C.
  */
 @Component
 public class ContactsFrame extends JFrame {

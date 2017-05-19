@@ -8,7 +8,9 @@ import javax.swing.*;
 import java.awt.*;
 
 /**
- * @Author Dominik Ciborowski
+ * Contact details dialog
+ *
+ * @Author Dominik C.
  */
 @org.springframework.stereotype.Component
 public class ContactDetailsDialog extends JDialog {
@@ -42,6 +44,12 @@ public class ContactDetailsDialog extends JDialog {
         pack();
     }
 
+    /**
+     * Pokazywanie dialogu i inicjowanie go obiektem kontaktu
+     * Swing nie obsluguje latwego sposobu na przekazywaie obiektow
+     *
+     * @param contact
+     */
     public void showDialog(Contact contact) {
         this.contact = contact;
         if (contact != null) {
@@ -62,6 +70,9 @@ public class ContactDetailsDialog extends JDialog {
         return inputPanel;
     }
 
+    /**
+     * Lopatologiczna metoda - pewnie daloby sie zrobic lepiej ale nie to bylo istota warsztatow :P
+     */
     private void initDialogWithContactObject() {
         formFields[0].setText(contact.getDisplayName());
         formFields[0].setEnabled(false);
